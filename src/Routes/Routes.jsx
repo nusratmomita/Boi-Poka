@@ -3,7 +3,7 @@ import {createBrowserRouter} from "react-router";
 import Root from '../Pages/Root/Root';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Home from '../Pages/Home/Home';
-import AboutBook from '../Pages/AboutBook/AboutBook';
+import AboutBook from '../Pages/WishList/WishList';
 import PagesToRead from '../Pages/PagesToRead/PagesToRead';
 import BookDetail from '../Pages/BookDetail/BookDetail';
 import EachBookDetail from '../Pages/BooksDetails/EachBookDetail';
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
             Component: Home
         },
         {
-          path: "/about",
+          path: "/WishList",
           Component: AboutBook
         },
         {
