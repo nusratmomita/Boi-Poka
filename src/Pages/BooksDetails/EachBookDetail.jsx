@@ -18,10 +18,12 @@ const EachBookDetail = () => {
     const handleReadBtn = id => {
         addToLS(id);
     }
+
     return (
         <div className='w-3/5 mx-auto m-50'>
-            <img className="w-50 h-50" src={image} alt="" />
+            <img className="w-50 h-50" src={image} alt="book" />
             <h1>{bookName}</h1>
+            
             <button onClick={() => handleReadBtn(id)} className="btn btn-neutral m-3">Read</button>
             <button className="btn btn-info">WishList</button>
         </div>

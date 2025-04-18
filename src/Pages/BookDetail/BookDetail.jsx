@@ -2,7 +2,7 @@
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router";
 
-const BookDetail = (/**{bookPromise}*/ { book}) => {
+const BookDetail = (/**{bookPromise}*/ {book}) => {
     // const bookData = use(bookPromise);
     // console.log(bookData)
 
