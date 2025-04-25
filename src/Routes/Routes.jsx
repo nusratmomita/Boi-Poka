@@ -17,14 +17,10 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children:[
         {
-            index: true,
+            index: true,// ! Why this
             path : "/",
             loader: () => fetch("booksData.json"),// * 3rd way to load data
             Component: Home
-        },
-        {
-          path: "/WishList",
-          Component: AboutBook
         },
         {
           path:'/bookDetails/:id',
@@ -36,6 +32,10 @@ export const router = createBrowserRouter([
           Component:ReadList,
           loader: () => fetch("booksData.json")
         },
+        // {
+        //   path: "/WishList",
+        //   Component: AboutBook
+        // },
     ]
   },
 ]);

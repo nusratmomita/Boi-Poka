@@ -22,13 +22,13 @@ const Books = ({bookData}) => {
             {/* <Suspense fallback={<span>Books Loading...</span>}>
                 <BookDetail bookPromise={bookPromise}></BookDetail>
             </Suspense> */}
-                <Suspense fallback={<span>Books Loading...</span>}>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                            {
-                                bookData.map((book) => <BookDetail key={book.bookId} book={book}></BookDetail>)
-                            }
-                    </div>
-                </Suspense>
+            <Suspense fallback={<span>Books Loading...</span>}>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                {
+                    bookData.map((book) => <BookDetail key={book.bookId} book={book}></BookDetail>)
+                }
+                </div>
+            </Suspense>
         </div>
     );
 };

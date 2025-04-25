@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getItemFromLS } from '../../Utilities/AddToLS';
 import BookDetail from '../BookDetail/BookDetail';
+import { Helmet } from 'react-helmet-async';
 
 const ReadList = () => {
     const [myList , setMyList] = useState([]);
@@ -38,7 +39,9 @@ const ReadList = () => {
 
     return (
         <div>
-            
+            <Helmet>
+                <title>Boi Poka | Listed Books</title>
+            </Helmet>
             <Tabs>
                 <TabList>
                 <Tab>Read List</Tab>
